@@ -18,6 +18,11 @@ def computer_vision(num_epochs):
 
     model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
     model.fit(training_images, training_labels, epochs=num_epochs)
+    model.evaluate(test_images, test_labels)
+
+    classifications = model.predict(test_images)
+    print(classifications[0])
+    print(test_labels[0])
 
 
 # Press the green button in the gutter to run the script.

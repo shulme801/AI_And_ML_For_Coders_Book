@@ -27,6 +27,6 @@ def computer_vision(num_epochs):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    computer_vision(25)
+    computer_vision(50)
     exit()
 # That's all folks!

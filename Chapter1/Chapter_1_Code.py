@@ -4,6 +4,7 @@ import numpy as np
 # importing Sequential and Dense from tensorflow.keras gets an IDE error, though the code still runs correctly.
 # but ignoring tensorflow.keras and importing directly from keras gets no IDE errors, and also works.
 # Code tested 11/23/2022 with python3.9.13, tensorflow-macos and tensorflow-metal, as built with miniconda.
+# 
 from keras import Sequential
 from keras.layers import Dense
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
@@ -25,6 +26,7 @@ def tensor_test1(num_epochs):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
+    print('Hello World')
     tensor_test1(500)
     exit()
 # That's all folks!
